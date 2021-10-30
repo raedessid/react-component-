@@ -3,13 +3,25 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import  raed from "/home/raed/Desktop/project/app/src/raed.jpg" ; 
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+import ProfilePhoto from "/home/raed/Desktop/project/app/src/Component/Profile/ProfilePhto.js"; 
+import FullName from "/home/raed/Desktop/project/app/src/Component/Profile/FullName.js" ; 
+import Address from "/home/raed/Desktop/project/app/src/Component/Profile/Adress.js" ;
+
+
+
+function Page(){
+    return(
+      <div>
+        <ProfilePhoto/>
+        <FullName/>
+        <Address/>
+      </div>
+      );
+  
+}
+ReactDOM.render(<Page/> , document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
